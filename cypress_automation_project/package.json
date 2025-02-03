@@ -1,0 +1,17 @@
+{
+  "name": "cypress_automation_project",
+  "version": "1.0.0",
+  "description": "this repo includes code used to automate an application using cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "simandi",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "cypress": "^14.0.1",
+    "cypress-iframe": "^1.0.1",
+    "exceljs": "^4.4.0"
+  }
+}

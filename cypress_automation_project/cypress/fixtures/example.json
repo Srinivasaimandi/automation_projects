@@ -1,0 +1,12 @@
+{
+  "baseUrl" : "https://qa-automation-practice.netlify.app/",
+  
+  "loginEmail": "admin@admin.com",
+  "password": "admin123",
+
+  "firstName" : "John",
+  "lastName" : "Doe",
+  "phoneNumber" : "1234567890",
+  "country" : "United States",
+  "email2" : "JohnDoe@gmail.com"
+}
