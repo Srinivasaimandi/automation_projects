@@ -1,21 +1,36 @@
 class RegisterPage {
-  constructor() {
-    this.username = "";
-    this.password = "";
+  get firstName() {
+    return cy.get("#firstName");
   }
 
-  // Add methods for the RegisterPage class
-  open() {
-    // Code to open the registration page
+  get lastName() {
+    return cy.get("#lastName");
   }
 
-  fillForm(userData) {
-    // Code to fill the registration form with user data
+  get phoneNumber() {
+    return cy.get("#phone");
   }
 
-  submit() {
-    // Code to submit the registration form
+  get country() {
+    return cy.get("#countries_dropdown_menu");
+  }
+
+  get emailAddress() {
+    return cy.get("#emailAddress");
+  }
+
+  get password() {
+    return cy.get("#password");
+  }
+
+  fillform() {
+    this.firstName.type("John");
+    this.lastName.type("Doe");
+    this.phoneNumber.type("1234567890");
+    this.country.select("India");
+    this.emailAddress.type("");
+    this.password.type("password");
   }
 }
 
-module.exports = RegisterPage;
+export default RegisterPage;

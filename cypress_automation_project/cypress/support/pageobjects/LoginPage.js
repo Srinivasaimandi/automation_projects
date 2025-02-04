@@ -13,6 +13,13 @@ class LoginPage {
   get btnSubmit() {
     return cy.get("#submitLoginBtn"); // Adjust the selector as needed
   }
+
+  loginToPortal(email, password) {
+    // Add this method
+    this.iptUsername.type(email);
+    this.iptPassword.type(password);
+    this.btnSubmit.click();
+  }
 }
 
 export default LoginPage;

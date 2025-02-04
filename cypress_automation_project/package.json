@@ -9,6 +9,7 @@
   "author": "simandi",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^9.4.0",
     "convert-excel-to-json": "^1.7.0",
     "cypress": "^14.0.1",
     "cypress-iframe": "^1.0.1",
