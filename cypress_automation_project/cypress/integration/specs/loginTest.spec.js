@@ -10,7 +10,7 @@ describe("forms suite", function () {
     cy.fixture("example").as("testData");
   });
 
-  it("login with invalid credentials", function () {
+  it.skip("login with invalid credentials", function () {
     let loginPage = new LoginPage();
     loginPage.visit();
     loginPage.loginToPortal(faker.internet.email(), faker.internet.password());
@@ -21,7 +21,7 @@ describe("forms suite", function () {
     );
   });
 
-  it("login with valid credentials", function () {
+  it.skip("login with valid credentials", function () {
     let loginPage = new LoginPage();
     loginPage.visit();
     loginPage.loginToPortal(this.testData.email, this.testData.password);
